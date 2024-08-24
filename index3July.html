@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  body{
+    background-color:whitesmoke;
+  }
+  .image-logo::before{
+    height: 300px;
+    width: 300px;
+    mix-blend-mode: multiply;
+    border:2px solid red;
+    border-radius: 5px;
+    padding: 2px 1px 2px 1px;
+  }
+
+  .image-logo{
+    height: 300px;
+    width: 300px;
+    mix-blend-mode: multiply;
+    border:15px solid red;
+    border-radius: 5px;
+    padding: 2px 1px 2px 1px;
+    transition: 5s;
+  }
+
+
+  .image-logo:hover{
+    border-color: aqua;
+    border-radius: 15px;
+  }
+</style>
+<body>
+    <div style="text-align: center;margin-top: 100px;">
+      <img class="image-logo" src="./logo.png" alt="Logo image">
+    </div>
+</body>
+</html>

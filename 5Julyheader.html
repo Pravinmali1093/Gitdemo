@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+        integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
+    <style>
+        header {
+            height: 100vh;
+            background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.4)), url('1.jpg');
+            background-size: cover;
+        }
+
+        header h1 {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .navbar a{
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            /* background: indianred; */
+            /* width:600px; */
+            font-family: sans-serif;
+            position: relative;
+        }
+        .navbar a:before{
+            content: '';
+            left: 0;
+            right: 0;
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear; 
+        }
+
+        .navbar a:hover:before{
+            width: 90%;
+        } 
+
+
+
+        @media screen and(max-width:500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+        }
+
+        .navbar img {
+            border-radius: 50%;
+            padding: 12px;
+            margin: 10px;
+            position: relative;
+            z-index: 1;
+            background-color: transparent;
+        }
+
+        .txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .txt h1 {
+            font-size: 3.2em;
+            letter-spacing: 2px;
+        }
+
+        .txt span {
+            color: white;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div>
+                <h1>TravelX</h1>
+            </div>
+            <div>
+                <img src="logo.jpg" height="40px;" width="100px;">
+            </div>
+            <div class="demo">
+                <a href="#">Home</a>
+                <a href="#">Login In</a>
+                <a href="#">Register</a>
+                <a href="#">Search</a>
+                <a href="#">Contact</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <section>
+            <div class="txt">
+                <span>Done</span>
+                <h1>Inventory Traveling Service</h1>
+            </div>
+        </section>
+    </header>
+
+</body>
+
+</html>

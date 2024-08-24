@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
+<style>
+    .navbar{
+      width: 100%;
+      background-color: aqua;
+      overflow: auto;
+    }
+
+    .navbar a{
+        float: left;
+        text-align: center;
+        padding: 12px;
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        /* width:600px; */
+    }
+    .active{
+        background-color: blue;
+    }
+
+    @media screen and(max-width:500px) {
+        .navbar a{
+            float: none;
+            display: block;
+           
+        }
+    }
+</style>
+</head>
+<body>
+     
+          <div class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">Login In</a>
+            <a href="#">Register</a>
+            <a href="#">Search</a>
+            <a href="#">Contact</a>
+            <a href="#">Logout</a>
+          </div>
+     
+</body>
+</html>

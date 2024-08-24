@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            font-size: 2rem;
+            color: rgb(8, 82, 82);
+        }
+
+        a::before {
+            content: "\1F517";
+            color: aqua;
+        }
+
+        a::after {
+            content: " ( " attr(href)" ) ";
+            color: brown;
+        }
+
+        body {
+            background-color: rgb(206, 204, 204);
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        p::before {
+            content: open-quote;
+        }
+
+        P::after {
+            content: close-quote "\221A";
+            background-color: blueviolet;
+        }
+
+  
+        /* div::after {
+            content: "\2460";
+        } */
+
+
+        /* input::after{
+    content: " ( "attr(value)" ) ";
+   } */
+    .demo{
+        display: flex;
+         border: 2px solid black;
+    }
+        .anime {
+            width: 80px;
+            height: 80px;
+            margin: 20px;
+            background:linear-gradient( steelblue, rgb(0, 15, 27));
+            text-align: center;
+            justify-content: center;
+            /* border: 2px solid black; */
+            animation: myanime 3s infinite;
+        }
+
+        @keyframes myanime {
+            from {
+                width: 80px;
+            }
+
+            to {
+                width: 400px;
+                background: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.co.in">Google&colon;</a>
+
+    UserName : <input type="text" id="abc" name="abc">
+
+    <br>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    <div><span style="background-color: white;">Quod illum et vero possimus,</span></div> temporibus atque eaque
+    excepturi cupiditate. In architecto recusandae dicta natus explicabo soluta blanditiis esse?!</p>
+    <div class="demo">
+        <div class="anime"></div>
+    </div>
+</body>
+
+</html>

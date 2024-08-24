@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgb(145, 145, 252), rgb(122, 122, 251));
+            background-repeat: no-repeat;
+            font-size: 20px;
+        }
+
+        .container {
+            margin: 50px;
+            background-color: rgb(147, 164, 247);
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            line-height: 40px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 1px 2px black;
+        }
+ 
+        label {
+            padding-left: 20px;
+            color: rgb(53, 52, 52);
+            letter-spacing: 1px;
+        }
+
+        input {
+            margin-top: 30px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 30px;
+        }
+
+        input[type=checkbox] {
+            position: relative;
+            border: 2px solid #000;
+            border-radius: 5px;
+            background: none;
+            cursor: pointer;
+            line-height: 0;
+            margin: 0 0.6em 0 0;
+            height: 20px;
+            width: 20px;
+            opacity: 0.5;
+            padding: 0 !important;
+            vertical-align: text-top;
+            -webkit-appearance: none;
+        }
+
+        input[type=checkbox]:hover {
+            opacity: 1;
+        }
+
+        input[type=checkbox]:checked {
+            background-color: #000;
+            opacity: 1;
+        }
+
+        input[type=checkbox]:before {
+            content: '';
+            top: 50%;
+            right: 50%;
+            width: 4px;
+            height: 10px;
+            border: solid rgb(147, 164, 247);
+            border-width: 0 2px 2px 0;
+            margin: -1px -1px 0 -1px;
+            position: absolute;
+            transform: rotate(45deg) translate(-50%, -50%);
+            z-index: 2;
+        }
+        .register{
+
+            height: 50px;
+            width: 20%;
+            background-color: rgb(130, 133, 136);
+            color: white;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px 0 10px 0;
+            border-radius: 50px;
+            transition: 2s;
+        }
+
+        .register:hover{
+            cursor: pointer;
+            color: blue;
+            border-color: blue;
+            background: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 class="heading">Registeration Form</h1>
+            <form>
+                <div class="row">
+                    <label>First Name :</label>
+                    <input type="text" name="firstname" id="firstname">
+                    <label>Last Name :</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <label>Address :</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="row">
+                    <label>Country :</label>
+                    <select id="country">
+                        <option value="Select">Select</option>
+                        <option value="IN">IN</option>
+                        <option value="USA">USA</option>
+                        <option value="CANADA">CANADA</option>
+                        <option value="DUBAI">DUBAI</option>
+                    </select>
+                    <label>Gender :</label>
+                    <input type="radio" name="gender" id="gender">Male
+                    <input type="radio" name="gender" id="gender">Female
+                    
+                        <label>Subject : </label>
+                        <input type="checkbox">Java
+                        <input type="checkbox">C
+                        <input type="checkbox">C++
+                </div>
+                <button class="register">Register</button>
+                <button class="reset">Reset</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
